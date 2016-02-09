@@ -1,3 +1,13 @@
 body {
     background-color: #eee;
 }
+.nav {
+    background-color: #ccc;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ccc;
+}

@@ -10,22 +10,32 @@
 
 <body>
 
+    <!--Site Header-->
+    <div>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
+            <li role="presentation"><a ui-sref="banana">Banana</a></li>
+        </ul>
+    </div>
+
     <!--Site Container-->
     <div class="container-fluid">
-        
-        <div>
-            THIS IS A HEADER
+
+        <div ng-controller="MainController">
+            <button ng-click="login()">Login</button>
+            <button ng-click="logout()">Logout</button>
         </div>
-        
+
         <ui-view>
         </ui-view>
-        
-        <div>
-            THIS IS A FOOTER
-        </div>
 
     </div>
     <!--Close Site Container-->
+
+    <!--Site Footer-->
+    <div class="container-fluid footer">
+        THIS IS A FOOTER
+    </div>
 
     <!--JS Components-->
     <!--Bootstrap/jQuery-->

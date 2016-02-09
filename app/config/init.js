@@ -1,1 +1,1 @@
-var app = angular.module('introUI', ['firebase','ui.router']);
+var app = angular.module('introUI', ['firebase', 'ui.router']);
