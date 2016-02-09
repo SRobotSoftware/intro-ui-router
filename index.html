@@ -5,16 +5,24 @@
     <title>Intro UI Router</title>
     <!--Style Components-->
     <link rel="stylesheet" href="assets/plugins/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/plugins/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/styles/site.css">
 </head>
 
 <body>
 
     <!--Site Container-->
     <div class="container-fluid">
-
+        
+        <div>
+            THIS IS A HEADER
+        </div>
+        
         <ui-view>
         </ui-view>
+        
+        <div>
+            THIS IS A FOOTER
+        </div>
 
     </div>
     <!--Close Site Container-->
@@ -32,6 +40,8 @@
     <!--Application-->
     <script src="app/config/init.js"></script>
     <script src="app/config/routes.js"></script>
+    <script src="app/components/home/home-controller.js"></script>
+    <script src="app/components/banana/banana-controller.js"></script>
 </body>
 
 </html>
