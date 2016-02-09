@@ -1,3 +1,3 @@
-app.controller('BananaController', function() {
-    
+app.controller('BananaController', function($scope) {
+    $scope.test2 = true;
 });
