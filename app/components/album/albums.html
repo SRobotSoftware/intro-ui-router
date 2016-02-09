@@ -1,0 +1,12 @@
+<h2>Here's my albums: </h2>
+
+<div>
+    <ul>
+        <li ng-repeat="album in albums">
+            <a ui-sref="album({title: album.title})">{{album.artist}} - {{album.title}}</a>
+            <ol>
+                <li ng-repeat="track in album.songs | orderBy:track.track">{{track.title}}</li>
+            </ol>
+        </li>
+    </ul>
+</div>

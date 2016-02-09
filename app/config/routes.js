@@ -15,6 +15,22 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controller: 'BananaController',
             controllerAs: 'bc'
         })
+        .state('albums', {
+            url: '/albums',
+            controller: 'AlbumsController',
+            templateUrl: 'app/components/album/albums.html'
+        })
+        .state('album', {
+            url: '/albums/:title',
+            controller: 'AlbumController',
+            controllerAs: 'ac',
+            templateUrl: 'app/components/album/album.html',
+            resolve: {
+                album: function($stateParams, MusicService) {
+                    return MusicService.getAlbum($stateParams.title);
+                }
+            }
+        })
         .state('auth', {
             abstract: true,
             controller: function ($state, AuthService) {

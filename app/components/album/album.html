@@ -1,0 +1,14 @@
+<h3>TEST ALBUMS</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>{{album.artist}} - {{album.title}}</h3>
+    </div>
+    <div class="panel-body">
+        <img ng-src="{{album.albumArt}}" alt="{{album.title}}">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="song in album.songs">
+                {{song.track}} - {{song.title}} <span class="badge">{{song.length}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
