@@ -16,19 +16,21 @@
             <li role="presentation"><a ui-sref="home">Home</a></li>
             <li role="presentation"><a ui-sref="banana">Banana</a></li>
             <li role="presentation"><a ui-sref="auth.dashboard">Dashboard</a></li>
+            <div ng-controller="MainController">
+                <li role="presentation" class="pull-right">
+                    <button ng-click="logout()">Logout</button>
+                </li>
+                <li role="presentation" class="pull-right">
+                    <button ng-click="login()">Login</button>
+                </li>
+            </div>
         </ul>
     </div>
 
     <!--Site Container-->
-    <div class="container-fluid">
 
-        <div ng-controller="MainController">
-            <button ng-click="login()">Login</button>
-            <button ng-click="logout()">Logout</button>
-        </div>
-
-        <ui-view>
-        </ui-view>
+    <ui-view>
+    </ui-view>
 
     </div>
     <!--Close Site Container-->
