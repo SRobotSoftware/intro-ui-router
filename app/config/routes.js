@@ -26,7 +26,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state('auth.dashboard', {
             url: '/dashboard',
-            template: '<h2>YOU ARE AWESOME and AUTHENTICATED</h2>',
+            templateUrl: 'app/components/dashboard/dashboard.html',
+            controller: 'DashboardController',
+            controllerAs: 'dc'
         })
 
 });
